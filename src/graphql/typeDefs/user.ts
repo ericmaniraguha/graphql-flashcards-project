@@ -6,4 +6,9 @@ export const userTypeDefs = gql`
     name: String!
     email: String!
   }
+
+  input createUserInput {
+    name: String!
+    email: String!
+  }
 `;
