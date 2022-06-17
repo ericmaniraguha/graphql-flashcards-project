@@ -1,5 +1,11 @@
 import { userTypeDefs } from './user';
 import { queryTypeDefs } from './query';
 import { mutationTypeDefs } from './mutation';
+import { flashcardTypeDefs } from './flashcard';
 
-export const typeDefs = [userTypeDefs, queryTypeDefs, mutationTypeDefs];
+export const typeDefs = [
+  userTypeDefs,
+  queryTypeDefs,
+  mutationTypeDefs,
+  flashcardTypeDefs,
+];

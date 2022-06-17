@@ -1,5 +1,8 @@
-import { users } from '../../db';
+import { User } from '../../models/User';
+import { findAllUsers } from '../../services/falshcard.sevice';
 
 export const Query = {
-  users: (parent: any, args: any, context: any) => users,
+  users: async (parent: any, args: any, context: any): Promise<User[]> => {
+    return await findAllUsers();
+  },
 };

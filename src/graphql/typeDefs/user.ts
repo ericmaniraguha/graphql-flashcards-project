@@ -5,10 +5,12 @@ export const userTypeDefs = gql`
     id: ID!
     name: String!
     email: String!
+    flashcards: [Flashcard]
   }
 
   input createUserInput {
     name: String!
     email: String!
+    password: String!
   }
 `;
