@@ -5,3 +5,9 @@ export const queryTypeDefs = gql`
     users: [User!]
   }
 `;
+
+export const queryFlashcardTypeDefs = gql`
+  type Query {
+    flashcards: [Flashcard!]
+  }
+`;
